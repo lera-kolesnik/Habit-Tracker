@@ -1,8 +1,16 @@
 import { Text, View, StyleSheet } from "react-native";
-import { Link } from "expo-router";
+import { Button } from "react-native-paper";
+import { useAuth } from "@/lib/auth-context";
 
 export default function Index() {
-  return <View style={styles.view}></View>;
+  const { signOut } = useAuth();
+  return (
+    <View style={styles.view}>
+      <Button mode="text" onPress={signOut} icon="logout">
+        Sign Out
+      </Button>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
