@@ -1,10 +1,9 @@
 import {View, Text} from 'react-native'
 
-export default function LoginScreen() {
+export default function AddHabitScreen() {
   return (
   <View>
     {""}
-    <Text>This is the login page</Text>
   </View>
   );
 }
